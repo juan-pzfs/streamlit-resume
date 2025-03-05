@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 import os
 
-# Custom CSS for Dark & Light Mode
-def set_theme():
+# Custom CSS for Dark & Light Mode + Fix Light Mode Input Visibility
+def apply_custom_styles():
     dark_mode = st.session_state.get("dark_mode", False)
-    
+
     if dark_mode:
         st.markdown(
             """
@@ -50,6 +50,17 @@ def set_theme():
                 border-radius: 8px !important;
                 font-weight: bold !important;
             }
+            label {
+                color: black !important;
+                font-weight: bold !important;
+            }
+            input, textarea {
+                background-color: white !important;
+                color: black !important;
+                border: 1px solid #ccc !important;
+                border-radius: 5px !important;
+                padding: 8px !important;
+            }
             </style>
             """,
             unsafe_allow_html=True
@@ -63,7 +74,7 @@ col1, col2 = st.columns([0.8, 0.2])
 with col2:
     if st.button("🌙 Toggle Dark Mode"):
         st.session_state.dark_mode = not st.session_state.get("dark_mode", False)
-set_theme()
+apply_custom_styles()  # Apply custom styles
 
 # Title and Introduction
 st.title("Juan Pablo Perez Flores")  
@@ -328,4 +339,4 @@ if os.path.exists("messages.csv"):
     df = pd.read_csv("messages.csv")
     st.dataframe(df)
 
-st.write("© 2024 Juan Pablo Perez Flores | All Rights Reserved")
+st.write("© 2025 Juan Pablo Perez Flores | All Rights Reserved")
