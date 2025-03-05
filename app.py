@@ -309,8 +309,9 @@ st.write("""
 
 st.write("---")
 
-# Contact Form with CSV Storage
+# Contact Form - Stores Messages Privately
 st.header("📬 Contact Me")
+
 name = st.text_input("Your Name")
 email = st.text_input("Your Email")
 message = st.text_area("Your Message")
@@ -329,14 +330,23 @@ def save_message(name, email, message):
 if st.button("📩 Send Message"):
     if name and email and message:
         save_message(name, email, message)
-        st.success("✅ Message saved! Thank you for reaching out, I'll get back to you ASAP")
+        st.markdown(
+            """
+            <div style="
+                background-color: #DFF6DD;
+                padding: 12px;
+                border-radius: 8px;
+                color: black;
+                font-size: 16px;
+                font-weight: bold;
+            ">
+                ✅ Message sent! Thank you for reaching out, I'll get back to you ASAP
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
     else:
         st.warning("⚠️ Please fill out all fields before sending.")
 
-# Display Messages Inside the Website
-if os.path.exists("messages.csv"):
-    st.write("📩 **View Received Messages**")
-    df = pd.read_csv("messages.csv")
-    st.dataframe(df)
 
 st.write("© 2025 Juan Pablo Perez Flores | All Rights Reserved")
