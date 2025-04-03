@@ -104,19 +104,22 @@ st.write("---")
 # Why Hire Me Section
 st.header("🌟 Why Hire Me?")
 st.write("""
-I am passionate about **data analytics and business intelligence**, thriving in environments  
-where I can **learn, adapt, and solve complex problems**.  
+I’m a data professional with a passion for **transforming raw data into clarity, insight, and action**.  
+With hands-on experience in **automation, dashboard development, and structured data pipelines**,  
+I’ve helped organizations optimize decision-making and improve reporting workflows.
 
-With experience **automating processes using Python** and **designing interactive dashboards in Power BI**,  
-I have worked on diverse projects that strengthened my ability to **turn raw data into meaningful insights**.  
+My strengths lie in building **end-to-end solutions**—from **data extraction and cleaning** in Python and SQL,  
+to **visualizing key metrics in Power BI** and creating scalable workflows using tools like **Knime and Selenium**.  
+I’ve even built a chatbot that pulls real-time sports data from a SQL database, combining **user-friendly design** with automation.
 
-What excites me most is the opportunity to **collaborate with teams, tackle real-world challenges,  
-and continuously refine my skills**. I believe that **growth comes from taking on new challenges**,  
-and I am eager to explore **new industries, technologies, and perspectives**.  
+I’m a fast learner and love jumping into new tools, teams, or challenges.  
+Whether it's contributing to a high-level BI project or engineering clean, usable datasets,  
+I bring **adaptability, precision, and a builder's mindset** to every role.
 
-I am looking to contribute to a **team that values innovation, efficiency, and continuous improvement**.  
-I bring **a strong work ethic, analytical expertise, and a deep commitment to delivering high-impact results**.  
+If you’re looking for someone who can **collaborate across teams**, think critically, and help turn  
+complex data into results that matter—I’d love to bring that energy and skillset to your team.
 """)
+
 
 st.write("---")
 
@@ -128,110 +131,240 @@ with st.expander("📊 Supply Chain Data Analyst Intern - CHRISTUS Health"):
     st.write("📅 **June 2023 - Present | Irving, TX**")
     st.write("")  # Forces a line break
     st.write("""
-    During my internship at CHRISTUS Health, I worked on **optimizing data processes**  
-    to support supply chain operations across Latin America. I developed **Python scripts**  
-    that automated data extraction for over **20,000+ medical supplies**, reducing manual  
-    work by **94%**. I also cleaned and structured **150,000+ records** using **SQL and Python**,  
-    ensuring data accuracy for strategic decision-making.  
+    During my internship at CHRISTUS Health, I worked on **optimizing data workflows and automating reporting processes**  
+    to support supply chain operations across Latin America. I collaborated closely with **supply chain managers, finance teams,  
+    and regional executives** to understand reporting needs and streamline critical processes.  
 
-    To enhance financial transparency, I built an **automated Power BI dashboard** that  
-    dynamically tracks **savings, costs, and inflation impact**, providing real-time visibility  
-    to executives. Additionally, I led **process automation projects** using **Python and Knime**,  
-    which reduced data processing time by **98%**, allowing for faster and more efficient analysis.  
+    I developed **Python scripts** that automated data extraction for **20,000+ medical supplies**, replacing manual workflows  
+    and reducing processing time by **94%**. I also cleaned and structured **150,000+ records** using **SQL and Python**,  
+    improving data reliability for strategic analysis.  
 
-    This experience strengthened my ability to work in **fast-paced environments, collaborate  
-    with stakeholders, and implement automation solutions that drive real business impact.**  
+    To increase visibility for executive leadership, I built an **automated Power BI dashboard** that visualized  
+    KPIs such as **cost savings over time, inventory turnover rates, and inflation-adjusted price trends**.  
+    This dashboard pulled from Excel reports using scheduled refreshes, ensuring real-time updates with minimal maintenance.  
+
+    I also led process automation projects using **Python and Knime**, helping convert manual analysis that previously took  
+    several hours into workflows that now run in **just minutes or seconds**. These solutions are actively used by the team today.  
+
+    In addition to development, I presented insights and dashboard walkthroughs to **non-technical stakeholders**,  
+    simplifying metric interpretation and encouraging broader adoption across departments.  
+
+    This experience strengthened my ability to work in **fast-paced, cross-functional environments**,  
+    and to deliver **data-driven tools that directly improve operational efficiency**.
     """)
 
 with st.expander("📁 Lead Student Worker - University of Texas at Arlington"):
     st.write("📅 **Feb 2021 - June 2023 | Arlington, TX**")
     st.write("")  # Forces a line break
     st.write("""
-    During my time as a Lead Student Worker at UTA, I was responsible for managing  
-    and maintaining **student immigration records**, ensuring **compliance and accuracy**  
-    for over **4,000+ students**. To streamline operations, I built an **Excel-based tracking system**  
-    that improved organization and efficiency in document management.  
+    At UTA’s Office of International Education, I managed and maintained **student immigration records**  
+    for over **4,000 students**, ensuring data accuracy and compliance with internal standards.  
+    I created and maintained an **Excel-based tracking system** to monitor long-term document storage and pickup,  
+    which helped the office track outstanding records and notify students more efficiently.  
 
-    Recognizing the need to **reduce manual tasks**, I automated workflows using **Excel functions  
-    and Power Query**, significantly reducing processing time and improving overall accuracy.  
-    This experience strengthened my ability to **work independently, manage high-volume data,  
-    and implement process improvements** in a fast-paced environment.
+    The system became the central database for recordkeeping, and I ensured it stayed updated and correctly formatted  
+    for daily use. I also helped onboard and train new student workers, guiding them on data entry best practices  
+    and consistency in handling sensitive information.  
+
+    This role strengthened my ability to **design structured processes**, handle **high-volume data**, and  
+    support operational efficiency in a **dynamic, team-driven environment**.
     """)
 
 st.write("---")
 
 # Projects Section
-st.header("📊 Business Intelligence & Data Analytics Projects")
+st.header("📊 Projects")
 
-with st.expander("📌 Automated Inventory & Spend Analysis - Python, Excel"):
+with st.expander("📌 Catalog Number Detection with KNN – Python, Pandas, ML"):
     st.write("""
-    To improve efficiency in supply chain management, I developed a **Python script**  
-    that automated the extraction and analysis of inventory data for **35,000+ medical supplies**.  
-    This significantly reduced processing time by **99%**, allowing for faster decision-making.  
+    As part of my internship at CHRISTUS Health, I collaborated with the data team to develop  
+    a **Python-based machine learning script** that detects **product catalog numbers** from unstructured text  
+    in product descriptions. The project used **tokenization and rule-based scoring** to identify patterns,  
+    followed by a **K-Nearest Neighbors (KNN) classifier** to determine whether a token was a valid catalog number.  
 
-    Additionally, I cleaned and merged datasets to analyze **spending trends, stock turnover,  
-    and risk categories**, providing better visibility into supply chain operations. The project  
-    also included an **automated KPI report generation system**, exporting reports in Excel with  
-    **color-coded risk categorization** to highlight high-priority inventory items.
+    The model achieved **92% accuracy** on large-scale testing (100,000+ records), significantly improving  
+    the process of catalog number extraction from Excel-based product data. The output was used in follow-up  
+    data enrichment pipelines and replaced a manual step that had previously required substantial time and effort.  
+
+    This was my first hands-on experience applying **machine learning in Python** and collaborating directly  
+    with a professional data analyst, giving me valuable exposure to **real-world ML workflows and applied problem solving**.
     """)
 
-with st.expander("📊 Latin America Project Dashboard - Power BI"):
+with st.expander("🔎 Web Scraping for Medical Product Data – Python, BeautifulSoup, Selenium"):
     st.write("""
-    I developed an **interactive Power BI dashboard** to track **key financial metrics**  
-    across **Chile, Colombia, and Mexico**. The dashboard provided insights into **savings,  
-    cost trends, and inflation impact**, helping executives make data-driven decisions.  
+    As part of my internship at CHRISTUS Health, I developed **two Python-based web scraping scripts**  
+    to collect **medical product information** from two distinct online sources. Using **BeautifulSoup** for  
+    a static website and **Selenium** for a more interactive site with dynamic elements, I extracted data  
+    such as **product descriptions, manufacturers, prices, device identifiers, and supplier information**.  
 
-    To ensure real-time accuracy, I automated data updates by linking **Power BI to Excel**,  
-    enabling seamless integration and reporting.
+    The scraping process used a **list of 50,000 catalog numbers**, dynamically generating URLs or automating  
+    search queries depending on the site structure. The extracted data was **cleaned and consolidated into Excel**,  
+    where it was later prepared for upload into **Informatica** for broader data integration.  
+
+    This project deepened my experience with **web automation, dynamic content handling, and exception-based debugging**,  
+    especially in cases where websites introduced unique formatting or unexpected behavior. It significantly  
+    reduced the manual effort previously required to compile this data, improving speed, accuracy, and consistency  
+    in the data enrichment pipeline.
     """)
 
-with st.expander("🤖 Facial Recognition Model - Orange Analytics, ML"):
+with st.expander("📊 Latin America Supply Chain Dashboard – Power BI, DAX, SharePoint"):
     st.write("""
-    Using **Orange Analytics**, I built a **facial recognition model** trained to classify images  
-    of **Cillian Murphy, Emma Stone, and Matt Damon**. I tested multiple machine learning models,  
-    including **KNN, Random Forest, Logistic Regression, and Neural Networks**, with  
-    **Logistic Regression and Neural Networks achieving the highest accuracy of 94%**.  
+    As part of my internship at CHRISTUS Health, I was tasked with redesigning an underperforming  
+    **Power BI dashboard** used to track supply chain project performance across **Chile, Colombia, and Mexico**.  
+    The original dashboard was slow and cluttered with unused datasets, so I conducted a full **data model overhaul**,  
+    rebuilding it from scratch and improving its reliability and responsiveness.  
 
-    This project provided hands-on experience in **classification algorithms, model validation,  
-    and performance evaluation**.
+    I restructured the **entity relationship diagram**, removed unnecessary tables, and rewrote complex metrics  
+    using **DAX** to improve formula efficiency and accuracy. The dashboard integrated data from both  
+    **Excel spreadsheets and SharePoint sources**, requiring consistent dataset updates and validation.  
+    I ensured accuracy by cross-validating all key financial metrics—such as **savings, inflation adjustments,  
+    increase over inflation, and total project costs**—against the original dashboard.  
+
+    The final version is now used by the **Supply Chain team** to evaluate **project-level financial impacts**,  
+    and is actively reviewed by **international leadership** for strategic decision-making across regions.
     """)
 
-with st.expander("📊 Home Credit Prediction Analysis - Python, Scikit-Learn"):
+with st.expander("📄 Document Translator Script – Python, deep-translator"):
     st.write("""
-    In this project, I developed a **machine learning model** to predict loan approval outcomes,  
-    helping financial institutions assess **credit risk**. The process involved **data preprocessing,  
-    exploratory data analysis (EDA), and feature engineering** to enhance model performance.  
+    As part of my internship at CHRISTUS Health, I developed a small **Python script** using the  
+    `deep-translator` library to automate the translation of **project-related documentation**  
+    from English to Spanish. The translated content was later used in a **presentation for the Supply Chain team**  
+    and international stakeholders.  
 
-    I tested different ML models, including **logistic regression and decision trees**,  
-    achieving **74% accuracy**. The project strengthened my skills in **data cleaning,  
-    model selection, and predictive analytics**.
+    While this was a one-time task, it demonstrated how scripting could eliminate repetitive translation work,  
+    saving time and ensuring consistency for internal communications.
     """)
 
-with st.expander("🔎 Web Scraping for Medical Products - Python, Selenium, BeautifulSoup"):
-    st.write("""  
-    To automate data collection for **medical product information**, I developed a  
-    **web scraping script** using **Selenium and BeautifulSoup**.  
-
-    This script reduced the data extraction time from **15 minutes per 10 records to just 1 minute**,  
-    significantly improving efficiency. The project involved **handling dynamic web elements,  
-    processing scraped data in Pandas, and exporting structured datasets for further analysis**.
-    """)
-
-with st.expander("⚽ AI-Powered Soccer Chatbot - Botpress"):
+with st.expander("🔁 Price Discrepancy Detection Workflow – KNIME, Python, Excel"):
     st.write("""
-    I developed a **chatbot using Botpress** to provide real-time information on  
-    **European soccer leagues, teams, and players**. The chatbot allows users to  
-    request details on **league standings, top scorers, and upcoming fixtures**  
-    for specific teams and competitions.  
+    As part of a collaborative intern project at CHRISTUS Health, I co-developed a **KNIME workflow**  
+    that automated **price discrepancy analysis** across thousands of medical supply records.  
+    The workflow integrated **7 Excel datasets** (totaling over **500,000 rows**) and performed  
+    **data cleaning, merging, and preprocessing** using both **KNIME visual workflows** and embedded **Python scripts**.  
 
-    Using **workflow automation in Botpress**, I structured conversations so users  
-    could naturally interact with the chatbot. The system retrieves **live data from  
-    a structured SQL database**, ensuring accurate and up-to-date responses.  
+    My main contribution involved building the **Python script** used for the analysis portion of the pipeline.  
+    It compared current product prices against negotiated vendor pricing to identify discrepancies,  
+    calculate price differences, and flag inconsistent entries. The final output was a structured Excel report  
+    of **50,000+ rows**, highlighting mismatches with calculated percentage differences for internal auditing.  
 
-    This project enhanced my skills in **automating user interactions, integrating databases  
-    into chatbot systems, and designing structured conversation flows** to improve  
-    accessibility to sports data.
+    This solution is now used regularly by the **Supply Chain team in Chile** and is being expanded to support  
+    **Mexico and Colombia**. The workflow has helped **streamline price validation**, allowing the team to  
+    reallocate time to higher-priority tasks and strengthen vendor compliance monitoring.
     """)
+
+with st.expander("📥 Informatica Upload for Item Master – Python, Excel, Informatica"):
+    st.write("""
+    At CHRISTUS Health, I used **Informatica** to upload structured medical product data into our  
+    centralized **item master**, based on outputs generated from earlier projects including the  
+    **KNN catalog detection script** and **web scraping workflows**.  
+
+    I prepared data in a standardized **CSV format** that followed strict metadata templates,  
+    ensuring compatibility with Informatica’s upload process. This task was repeated multiple times  
+    across large datasets to progressively update catalog entries.  
+
+    Through this process, we helped improve the **catalog identification rate** in the item master  
+    from **46% to 67%**, significantly increasing visibility, traceability, and data quality  
+    for product records across the organization.
+    """)
+
+with st.expander("📦 Inventory Tracking & Overstock Analysis – Python, Data Normalization"):
+    st.write("""
+    At CHRISTUS Health, I developed a **Python-based workflow** to automate monthly **inventory analysis**  
+    for warehouse data across Chile. Each month, I received inventory records in **.txt format**,  
+    totaling up to **100,000 records per file**, and converted them into normalized **CSV files**  
+    by adjusting thousands and decimal separators from Latin American to U.S. formatting standards.  
+
+    After preprocessing, I merged at least **13 months of historical inventory data** to run movement-based  
+    analysis. The logic classified each item as **slow-moving, regularly moving, or overstocked**  
+    based on its historical movement across the past year. The final output included structured tables  
+    detailing product quantities and values for each category.  
+
+    This analysis is used by the **Supply Chain team** in Chile whenever a report is needed for a specific warehouse,  
+    helping them identify excess stock and optimize supply chain efficiency.
+    """)
+
+with st.expander("🤖 Facial Recognition Classification – Orange Analytics, ML"):
+    st.write("""
+    In a team-based project for my Intro to Business Analytics course, I helped develop  
+    a **facial recognition model** using **Orange Analytics** to classify images of  
+    **Cillian Murphy, Emma Stone, and Matt Damon**. The objective was to compare various  
+    **machine learning algorithms** and optimize performance through iterative tuning.  
+
+    We tested and evaluated models including **KNN, Decision Tree, Logistic Regression,  
+    Random Forest, and Neural Networks**, measuring performance using **AUC scores** and  
+    **confusion matrices**. After adjusting parameters and refining the model,  
+    our best-performing algorithm achieved an accuracy of **92%**.  
+
+    This project provided a strong foundation in **classification modeling, performance evaluation,**  
+    and practical machine learning experimentation in a visual workflow environment.
+    """)
+
+with st.expander("📊 Gender Pay Gap Analysis – SQL, Tableau"):
+    st.write("""
+    As part of my Data Visualization course, I conducted a solo project analyzing the **gender pay gap**  
+    across multiple professional fields using a dataset of over **15,000 salary records**. Using **SQL**,  
+    I performed exploratory data analysis to identify discrepancies in compensation based on gender,  
+    and segmented the data by industry, occupation, and academic background.  
+
+    After uncovering meaningful trends, I used **bar charts in Tableau** to visualize patterns such as  
+    **pay gap differences**, **popular majors by gender**, and potential correlations between workforce  
+    composition and compensation disparity. One key insight showed that **industries dominated by one gender  
+    tend to have a slight pay advantage for that gender**, while more gender-balanced fields had a smaller gap overall.  
+
+    The final deliverable was a **written report** summarizing my findings and visualizations, demonstrating  
+    my ability to connect **data storytelling** with **business and social insights**.
+    """)
+
+with st.expander("🏦 Home Credit Risk Prediction – Python, Scikit-Learn, XGBoost"):
+    st.write("""
+    In a team project for my Data Science class, I helped build a **machine learning model**  
+    to predict whether loan applicants would repay or default, using a dataset of over **12,000 records**.  
+    The goal was to help financial institutions assess **credit risk** by developing a reliable  
+    classification pipeline from end to end.  
+
+    We used **Python with Scikit-learn, XGBoost, and imbalanced-learn** to handle data cleaning,  
+    preprocessing, feature engineering, and model training. I also performed **EDA** using **Seaborn**  
+    and **Matplotlib** to uncover correlations and guide our feature selection.  
+
+    Our final model achieved **74% accuracy**, and the process helped reinforce key concepts  
+    around **model evaluation, class imbalance, and predictive analytics**.  
+    This hands-on experience clarified several complex data science techniques  
+    and strengthened my confidence working with real-world machine learning problems.
+    """)
+
+with st.expander("⚽ AI-Powered Soccer Chatbot – Botpress, Web Integration"):
+    st.write("""
+    I developed an **AI-powered chatbot** using **Botpress** to provide real-time insights  
+    on **European soccer leagues, teams, and players**. Users could ask about  
+    **league standings, top scorers, or upcoming fixtures**, and the chatbot would retrieve  
+    current information from **external websites**, depending on the league requested.  
+
+    I designed automated workflows within Botpress to create **structured, user-friendly conversations**,  
+    allowing users to naturally navigate and access data based on their queries. The system dynamically  
+    pulled the latest information from public web sources, keeping responses accurate and relevant.  
+
+    This project strengthened my skills in **workflow automation**, **real-time data integration**,  
+    and designing chat interfaces that bridge **user questions with live web data** — showcasing how AI  
+    can be applied to build engaging and useful tools for sports fans.
+    """)
+
+with st.expander("🧠 Trust in AI: Student Sentiment Study – Python, Power BI"):
+    st.write("""
+    For my senior seminar in Business Analytics, I conducted a **student survey on trust in AI**,  
+    gathering over **100 responses** from individuals across campus. The survey measured attitudes  
+    toward AI, experience using it, and reactions to common use cases and hallucinations.  
+
+    I cleaned and transformed the data using **Python**, converting qualitative responses into  
+    numeric formats for analysis. I then developed an **interactive dashboard in Power BI** to visualize  
+    trends across different demographics, such as **major, academic year, and level of AI familiarity**.  
+
+    One key insight showed that **less experienced users tend to overtrust AI**, while those with more  
+    hands-on exposure showed greater skepticism — especially after encountering hallucinated outputs.  
+    The project culminated in both a **formal report and live presentation**, strengthening my ability to  
+    translate survey data into **clear, actionable insights**.
+    """)
+
+
 
 st.write("---")
 
@@ -246,12 +379,15 @@ technical_skills = {
     "Dashboard Design": 90,
     "Automation (Knime, Python, Selenium)": 85,
     "Power BI": 82,
+    "Data Integration (APIs, CSV, TXT)": 70,
     "Web Scraping (Selenium, BeautifulSoup)": 68,
     "Tableau": 63,
     "SQL": 60,
+    "Version Control (Git/GitHub)": 60,
     "Database Management (SQL, Informatica)": 60,
     "AI Development (Chatbots)": 55,
     "ETL Processes (Informatica, Knime)": 50
+
 }
 
 for skill, level in technical_skills.items():
@@ -265,10 +401,13 @@ st.subheader("📊 Statistical & Analytical Skills")
 statistical_skills = {
     "Data Cleaning & Transformation": 87,
     "Exploratory Data Analysis (EDA)": 75,
-    "Feature Engineering": 70,
     "Data Modeling & Structuring": 73,
-    "Time-Series Analysis": 62,
+    "Survey Data Analysis": 72,
+    "Feature Engineering": 70,
+    "Classification Algorithms (LogReg, RF, KNN)": 68,
     "Machine Learning": 65,
+    "Model Evaluation (AUC, Confusion Matrix)": 65,
+    "Time-Series Analysis": 62,
     "A/B Testing & Experimentation": 60
 }
 
@@ -281,15 +420,16 @@ st.write("---")  # Separator
 # Business & Soft Skills
 st.subheader("📈 Business & Soft Skills")
 business_skills = {
-    "Adaptability & Learning Agility": 95,
-    "Cross-Functional Collaboration": 90,
-    "Communication & Data Storytelling": 90,
-    "Attention to Detail": 92,
-    "Time Management & Prioritization": 92,
-    "Problem-Solving": 85,
-    "Business Process Optimization": 87,
+    "Adaptability & Learning Agility": 90,
+    "Cross-Functional Collaboration": 89,
+    "Communication & Data Storytelling": 89,
+    "Time Management & Prioritization": 89,
     "Data-Driven Decision Making": 89,
-    "Critical Thinking": 88
+    "Business Process Optimization": 87,
+    "Attention to Detail": 86,
+    "Presentation & Reporting": 85,
+    "Problem-Solving": 85,
+    "Critical Thinking": 85
 }
 
 for skill, level in business_skills.items():
